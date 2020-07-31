@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #di{
+            width: 100%;
+            height: 50px;
+            box-sizing: border-box;
+            position:fixed  ;
+            display: flex;
+            border: 1px solid black;
+            text-align: center;
+            opacity: 0.5;
+        }
+        #de{
+            width: 100%;
+            box-sizing: border-box;
+            position:fixed;
+
+            display: flex;
+            border: 1px solid black;
+            text-align: center;
+            bottom: 0;
+            background-color: white;
+
+
+        }
+        .q{
+            flex: 1;
+            padding-top: 10px;
+            /*    background: #c8c8c8;*/
+            border-radius: 100px 100px;
+        }
+        .w{
+            flex: 2;
+            padding-top: 15px;
+        }
+        #e{
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+
+        }
+        .content{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* white-space: nowrap;*/
+            width: 100%;
+            margin-left: 2%;
+            margin-top: 5px;
+            font-size: 15px;
+        }
+        .price{
+            margin-left: 5px;
+            /* height: 24px;*/
+            width: 100%;
+            /* border: red solid 1px;*/
+            /*  margin-left: 20px;*/
+            margin-top: 5px;
+            color: red;
+            font-size: 20px;
+            display: flex;
+            /*将左右空白间距进行分部*/
+            justify-content: space-between;
+            /* justify-content: space-around;*/
+            /*换行*/
+            flex-wrap: wrap;
+            /*将上下空白间距进行分部*/
+            align-content: space-between;
+
+        }
+        .pt{
+
+            height: 50%;
+            /*border: red solid 1px;*/
+            box-sizing: border-box;
+            /* margin-left: 100px;
+             margin-bottom:100px;*/
+            background-color: red;
+            font-size: 10px;
+            text-align: center;
+            color: white;
+            position: relative;
+            right: 25%;
+            top: 30%;
+
+
+        }
+        .d{
+            /* border-radius: 20px 20px;*/
+            margin-top:5px;
+            opacity: 0.5;
+            height: 15px;
+            width: 100%;
+            margin-left: 2%;
+            /*  margin-bottom:100px;*/
+            font-size: 12px;
+
+            display: flex;
+            /*将左右空白间距进行分部*/
+            justify-content: space-between;
+            /* justify-content: space-around;*/
+            /*换行*/
+            flex-wrap: wrap;
+            /*将上下空白间距进行分部*/
+            align-content: space-between;
+            padding-bottom: 5px;
+        }
+
+        .p{
+            flex: 3;
+
+        }
+        .o{
+
+            flex: 1;
+        }
+        .l{
+
+            padding-top: 10px;
+            margin-top: 10px;
+            height: 30px;
+            font-size: 12px;
+            display: flex;
+            /*将左右空白间距进行分部*/
+            justify-content: space-between;
+            /* justify-content: space-around;*/
+            /*换行*/
+            flex-wrap: wrap;
+            /*将上下空白间距进行分部*/
+            align-content: space-between;
+            background-color: white;
+        }
+        .n{
+            padding-top: 10px;
+
+            height: 30px;
+            font-size: 12px;
+            display: flex;
+            /*将左右空白间距进行分部*/
+            justify-content: space-between;
+            /* justify-content: space-around;*/
+            /*换行*/
+            flex-wrap: wrap;
+            /*将上下空白间距进行分部*/
+            align-content: space-between;
+            background-color: white;
+        }
+
+
+        .i{
+            padding-left: 2%;
+            flex: 1;
+            opacity: 0.5;
+
+        }
+        .j{
+            padding-right:20%;
+            display: flex;
+            /*将左右空白间距进行分部*/
+            /* justify-content: space-between;*/
+            /* justify-content: space-around;*/
+            /*换行*/
+            flex-wrap: wrap;
+            /*将上下空白间距进行分部*/
+            align-content: space-between;
+            background-color: white;
+
+            flex:9;
+        }
+        .g{
+            flex: 2;
+            opacity: 0.5;
+            background-color: white;
+        }
+        .s{
+            padding-left: 2%;
+            flex: 1;
+            opacity: 0.5;
+
+
+        }
+        .m{
+            padding-right:20%;
+            flex: 9;
+            list-style: none;
+            float: left;
+        }
+        .h{
+
+            float: left;
+            margin-left: 8px;
+            overflow: hidden;
+            /* 出省略号的效果*/
+            text-overflow: ellipsis;
+        }
+        .iconfont{
+            float: right;
+            margin-right: 10px;
+            opacity: 0.5;
+        }
+        .b{
+            font-size: 15px;
+            padding-left: 2%;
+            flex: 1;
+            opacity: 0.8;
+
+        }
+        .f{
+            font-size: 15px;
+            color: red;
+        }
+        #p{
+            background-color: white;
+        }
+        .t{
+            border-radius: 20px 20px;
+
+            /*border: red solid 1px;*/
+            box-sizing: border-box;
+            /* margin-left: 100px;
+             margin-bottom:100px;*/
+            background-color: pink;
+            opacity: 0.5;
+            font-size: 10px;
+            text-align: center;
+
+
+        }
+        .v{
+
+
+            width: 90%;
+            font-size: 12px;
+            display: flex;
+            /*将左右空白间距进行分部*/
+            justify-content: space-between;
+            /* justify-content: space-around;*/
+            /*换行*/
+            flex-wrap: wrap;
+            /*将上下空白间距进行分部*/
+            align-content: space-between;
+            background-color: white;
+            margin-left: 5%;
+
+        }
+        .c{
+
+            font-size: 13px;
+            margin-left: 2%;
+
+        }
+        .x{
+            padding-right:2%;
+            display: flex;
+            /*将左右空白间距进行分部*/
+            /* justify-content: space-between;*/
+            /* justify-content: space-around;*/
+            /*换行*/
+            flex-wrap: wrap;
+            /*将上下空白间距进行分部*/
+            align-content: space-between;
+            background-color: white;
+
+            flex:9;
+        }
+        #f{
+            background-color: white;
+            margin-top: 10px;
+        }
+        .z{
+            width: 10%;
+            margin-top: 5px;
+            margin-left: 2%;
+            height: 20%;
+            font-size: 10px;
+            /*   padding-top: 10px;*/
+            /*    background: #c8c8c8;*/
+            display: flex;
+            /*将左右空白间距进行分部*/
+            /* justify-content: space-between;*/
+            /* justify-content: space-around;*/
+            /*换行*/
+            flex-wrap: wrap;
+            /*将上下空白间距进行分部*/
+            align-content: space-between;
+            background-color: white;
+            text-align: center;
+
+
+
+        }
+
+
+        .a{
+            height: 40px;
+            background-color: red;
+            color: white;
+            width: 32%;
+            padding-top: 10px;
+        }
+        .u{
+            height: 40px;
+            background-color: orange;
+            color: white;
+            width: 32%;
+            padding-top: 10px;
+        }
+        #as{
+            color: black;
+            width: 100%;
+            height: 650px;
+
+            display: none;
+
+            left: 0;
+          top: 0;
+            margin: 0;
+          /*  margin-top: 100px;*/
+            background: black;
+            position: fixed;
+
+        }
+        .u:hover #as{
+            display:block;
+        }
+        #awra{
+
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            box-sizing: border-box;
+            position:fixed;
+            color: white;
+            /* display: flex;*/
+            border: 1px solid red;
+            text-align: center;
+            bottom: 0;
+            background-color: red;
+            font-size: 15px;
+        }
+        #adi{
+            width: 95%;
+            margin-left: 2.5%;
+            height: 100px;
+            display: flex;
+            padding-bottom: 15px;
+            border-bottom: solid 1px gainsboro;
+        }
+        #adi .aq{
+            width: 70%;
+            margin-top: 15px;
+            margin-left: 10px;
+            text-align: left;
+        }
+        #adi .aq .aw{
+            color: red;
+            font-size: 20px;
+        }
+        #adi .aq .ae{
+            font-size: 12px;
+            color: black;
+        }
+        .ar{
+            width: 95%;
+            margin-left: 2.5%;
+            padding-top: 15px;
+            height: 90px;
+            font-size: 12px;
+            text-align: left;
+            border-bottom: solid 1px gainsboro;
+
+        }
+        .ar .at{
+            height: 30px;
+            color: black;
+        }
+        .ay{
+            width: 95%;
+            margin-left: 2.5%;
+            padding-top: 15px;
+
+            font-size: 12px;
+            text-align: left;
+            border-bottom: solid 1px gainsboro;
+            padding-bottom: 15px;
+        }
+        .au{
+            width: 100%;
+            display: flex;
+
+        }
+        .au .ai{
+            width: 25%;
+
+            line-height: 40px;
+            background: #eeeeee;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 10px 10px;
+            margin-top: 10px;
+
+        }
+        .ao{
+            width: 95%;
+            margin-left: 2.5%;
+            padding-top: 15px;
+
+            font-size: 12px;
+            text-align: left;
+            border-bottom: solid 1px gainsboro;
+            padding-bottom: 20px;
+        }
+        input{
+            float: right;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap" style="background-color: #c8c8c8">
+    <div id="di">
+        <div class="q">
+            <span class="iconfont" style="font-size: 30px;"> &#xe658;</span>
+        </div>
+        <div class="w">商品</div>
+        <div class="w">评价</div>
+        <div class="w">详情</div>
+        <div class="q">
+            <span class="iconfont"style="font-size: 30px;"> &#xe600;</span>
+        </div>
+    </div>
+
+    <div id="e">
+        <img src="imgs/O1CN01BYeoF71TZrxihDItn_!!0-item_pic.jpg_1080x1800Q50s50.jpg" width=100% height=70% >
+        <div class="price">
+            <span><strong>￥69-198</strong></span>
+            <div class="pt" >专属优惠</div>
+            <div class="pt" style="right: 50%">淘金币抵3%</div>
+        </div>
+        <div style="font-size: 10px ;opacity: 0.5;margin-left: 2% ;margin-top: 5px"> 价格：<span style="text-decoration: line-through">￥69-198</span></div>
+
+        <div class="content">大版本正版中小学新编成语词典2020年版初中小学生版专用中华大词典多全功能最新版新华字典现代汉语字典词语小学生四字大全故事书</div>
+        <div class="d">
+            <div class="p">快递：免运费</div>
+            <div class="p">月销量 33件</div>
+            <div class="o">广东广州</div>
+        </div>
+    </div>
+    <div id="d">
+        <div class="l">
+            <div class="i">优惠</div>
+            <div class="j">
+                <img src="imgs/TB1XjtERXXXXXbPXFXXXXXXXXXX-180-36.png_320x320Q50s50.jpg_.webp"height="12">
+                <div class="h">领取优惠卷</div>
+            </div>
+            <div class="g">领取
+                <span class="iconfont" style="font-size: 10px; color: black;" > &#xe62d;</span>
+            </div>
+        </div>
+        <div class="n">
+            <div class="s">服务</div>
+            <ul class="m">
+                <li class="h">假一赔十</li>
+                <li class="h">急速退款</li>&nbsp;
+                <li class="h" >七天无理由退货</li>
+            </ul>
+            <div class="s"> <span class="iconfont" style="font-size: 10px; color: black;" > &#xe62d;</span></div>
+        </div>
+    </div>
+    <div id="j">
+        <div class="l">
+            <div class="i">参数</div>
+            <div class="j">
+                <div class="h">品牌ISBN标号</div>
+            </div>
+
+            <div class="s"> <span class="iconfont" style="font-size: 10px; color: black;" > &#xe62d;</span></div>
+        </div>
+    </div>
+    <div id="p">
+        <div class="l">
+            <div class="b">商品评价（6391）</div>
+
+            <div class="f">查看全部
+                <span class="iconfont" style="font-size: 12px; color: black;" > &#xe62d;</span>
+            </div>
+        </div>
+        <div class="v">
+            <div class="t">印刷清晰（126）</div>
+            <div class="t">纸质不错（67）</div>
+            <div class="t">内容不错（45）</div>
+            <div class="t">正版（43）</div>
+        </div>
+        <div class="x" style="margin-top: 10px">
+            <img src="imgs/TB1yeWeIFXXXXX5XFXXuAZJYXXX-210-210.png_80x80Q90s50.jpg_.webp"width="8% "style=" border-radius: 100px 100px; margin-left: 2%";>
+            <div class="h">t**0</div>
+            <div class="c">产品包装精致美观大气。字迹清晰工整很不错，真实评价，希望可以帮到集美们</div>
+        </div>
+    </div>
+    <div id="f">
+        <div id="g">店铺活动</div>
+        <img src="imgs/O1CN01RDgTqR28DKjvvaNx0_!!854417898.jpg_760x760Q50s50.jpg_.webp"width="100%">
+        <img src="imgs/O1CN01tyedSq28DKginLQA5_!!854417898.jpg_760x760Q90s50.jpg_.webp"width="100%">
+        <img src="imgs/O1CN01VZNh5e28DKj1PJBdi_!!854417898.jpg_760x760Q90s50.jpg_.webp"width="100%">
+    </div>
+    <div id="de">
+        <div class="z">
+
+            <span class="iconfont" style="font-size: 25px; " >&#xe601;</span>
+            店铺
+
+        </div>
+        <div class="z">
+            <span class="iconfont" style="font-size: 25px;">&#xe603;</span>客服
+        </div>
+        <div class="z">
+            <span class="iconfont" style="font-size: 25px;">&#xe602;</span>收藏
+        </div>
+
+        <div class="u"><span>加入购物车</span>
+            <div id="as">
+                <div id="adi">
+                    <img src="imgs/O1CN01BYeoF71TZrxihDItn_!!0-item_pic.jpg_1080x1800Q50s50.jpg"width="100" >
+                    <div class="aq">
+                        <div class="aw">￥69-198</div>
+                        <div class="ae">库存 21件</div>
+                        <div class="ae">请选择颜色：颜色分类</div>
+
+                    </div>
+                    <span class="iconfont" style="font-size: 30px;  background-position:right top ; margin-top: 10px"> &#xe651;</span>
+                </div>
+                <div class="ar">
+                    <div class="at">配送区域（配送地可能会影响库存）</div>
+                    <div class="at">
+                        <span class="iconfont" style="font-size: 10px;   margin-top: 10px">&#xe641;</span>双桥区
+                        <span class="iconfont" style="font-size: 10px; float: right;  margin-top: 10px"> &#xe62d;</span>
+                    </div>
+                    <div class="at">次日达.19:00前付款，承诺7月29号送达，可选送货时间</div>
+                </div>
+                <div class="ay">
+                    <div>颜色分类</div>
+                    <div class="au">
+                        <div class="ai">
+                            <img src="imgs/O1CN01BYeoF71TZrxihDItn_!!0-item_pic.jpg_1080x1800Q50s50.jpg"width="15">
+                            墨绿色
+                        </div>
+                        <div class="ai" style="margin-left: 10px">
+                            <img src="imgs/O1CN01BYeoF71TZrxihDItn_!!0-item_pic.jpg_1080x1800Q50s50.jpg"width="15">
+                            浅绿色
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ao">
+                    <div>购买数量
+                        <input type="number" step="1" min="0" max="50" placeholder="数量" value="1"></div>
+
+                </div>
+
+                <div id="awra">确定</div>
+
+            </div>
+        </div>
+        <div class="a">立即购买</div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
